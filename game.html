@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+</head>
+<body>
+    <h1>Let's play!</h1>
+    <h2>Good luck.</h2>
+    <hr>
+        <p>guess a letter:</p>
+    <form action="/guessletter" method="get">
+        <input type="submit" value="a" name="letter">
+        <input type="submit" value="b" name="letter">
+        <input type="submit" value="c" name="letter">
+        <input type="submit" value="d" name="letter">        
+    </form>
+    <br>
+    <form action="/game" method="get">
+        <input type="text" placeholder="guess the word..." name="word" id="word">
+        <input type="submit" value="guess">
+    </form>
+    <br>
+    <p>
+        $$tempword$$
+    </p>
+    <br>
+    <p>
+        $$winloss$$
+    </p>
+        <br>
+    <p>
+        $$secret$$
+    </p>
+   
+</body>
+</html>
